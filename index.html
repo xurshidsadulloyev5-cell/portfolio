@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Xurshid Sadulloyev — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="bg3d"></canvas><canvas id="fx"></canvas>
+<header class="nav">
+  <a class="logo" href="#home">&lt;XS/&gt;</a>
+  <nav><a href="#about" data-i18n="nav_about"></a><a href="#projects" data-i18n="nav_projects"></a><a href="#contact" data-i18n="nav_contact"></a></nav>
+  <div class="tools">
+    <button id="shuffle" title="Random FX">🎲 <small id="hud"></small></button>
+    <button id="lang">EN</button>
+    <button id="theme" aria-label="Theme">◐</button>
+  </div>
+</header>
+<main>
+<section id="home" class="hero">
+  <div>
+    <p class="mono acc" data-i18n="hi"></p>
+    <h1>Xurshid<br><span class="grad">Sadulloyev</span></h1>
+    <p class="mono role">&gt; <span id="typed"></span><i class="caret"></i></p>
+    <p class="lead" data-i18n="lead"></p>
+    <div class="cta"><a class="btn" href="#projects" data-i18n="cta1"></a><a class="btn ghost" href="#contact" data-i18n="cta2"></a></div>
+  </div>
+  <div class="ph"><div class="ring"></div><img src="images/profile.png" alt="Xurshid Sadulloyev"></div>
+</section>
+<section id="about" class="rv">
+  <h2 data-i18n="about_t"></h2>
+  <div class="two">
+    <p data-i18n="about_p"></p>
+    <pre class="code">const xurshid = {
+  role: "developer",
+  stack: ["HTML", "CSS", "JS"],
+  coffee: Infinity,
+  fixBug() { return "✔"; }
+};</pre>
+  </div>
+  <div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Three.js</span><span>Git</span><span>Node.js</span></div>
+</section>
+<section id="projects" class="rv">
+  <h2 data-i18n="proj_t"></h2>
+  <div class="cards">
+    <article class="card"><img src="images/project-1.svg" alt=""><div><h3 data-i18n="p1"></h3><p data-i18n="pd"></p><a class="acc" href="#">GitHub</a></div></article>
+    <article class="card"><img src="images/project-2.svg" alt=""><div><h3 data-i18n="p2"></h3><p data-i18n="pd"></p><a class="acc" href="#">GitHub</a></div></article>
+    <article class="card"><img src="images/project-3.svg" alt=""><div><h3 data-i18n="p3"></h3><p data-i18n="pd"></p><a class="acc" href="#">GitHub</a></div></article>
+  </div>
+</section>
+<section id="contact" class="rv">
+  <h2 data-i18n="contact_t"></h2>
+  <p class="lead" data-i18n="contact_p"></p>
+  <div class="cta"><a class="btn" href="mailto:xurshidsadulloyev@gmail.com">Email</a><a class="btn ghost" href="https://t.me/@Xurshid_sadulloyev">Telegram</a><a class="btn ghost" href="https://github.com/xurshidsadulloyev5-cell!">GitHub</a></div>
+</section>
+</main>
+<footer>© <span id="y"></span> Xurshid Sadulloyev — <span data-i18n="made"></span></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/bg3d.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
